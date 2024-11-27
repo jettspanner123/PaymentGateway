@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment kar BC</title>
+
+    <link rel="stylesheet" href="./main.css">
+    <script src="index.js" defer></script>
+</head>
+
+<body>
+<main class="h-screen w-screen flex justify-center items-center bg-gray-300">
+    <!--        the main white box-->
+    <section
+            class="bg-gray-200 flex justify-center items-center rounded-2xl w-[60%] h-[70%] shadow-2xl border-[1px] border-gray-300 shadow-gray-600">
+        <!--            this is the actual card bitch-->
+        <div
+                id="card"
+                class="h-[50%] flex justify-start px-[2rem] items-center bg-gradient-to-br from-[#FAB12F] to-[#FA4032] border-[1px] border-[rgba(125,125,125,0.1)] shadow-xl shadow-gray-400 rounded-xl w-[100%] bg-blue-300">
+            <div class="w-full">
+                <div class="w-full flex justify-between">
+                    <div>
+                        <h1 class="text-[0.8rem] text-[rgba(255,255,255,0.6)]">Card Number</h1>
+                        <h2 class="text-white">1234 5678 9876</h2>
+                    </div>
+
+                    <h1 class="text-white bold_text text-[1.5rem] translate-y-[0.1rem]">VISA</h1>
+                </div>
+
+                <div class="mt-5 flex justify-between w-full">
+                    <div>
+                        <h1 class="text-[0.8rem] text-[rgba(255,255,255,0.6)]">Valid Date</h1>
+                        <h2 class="text-white">09 / 24</h2>
+                    </div>
+
+                    <div>
+                        <h1 class="text-[0.8rem] text-[rgba(255,255,255,0.6)]">Valid Date</h1>
+                        <h2 class="text-white">***</h2>
+                    </div>
+                </div>
+                <h1 class="text-[0.8rem] text-[rgba(255,255,255,0.6)] mt-5">Card Holder Name</h1>
+                <h2 class="text-white">Your Mom</h2>
+            </div>
+        </div>
+
+        <div class="w-[90%] flex justify-start items-center -translate-x-[15%] h-[70%]">
+            <form class="w-full">
+                <h1 class="text-gray-400 text-[0.8rem]">Card Number</h1>
+                <input placeholder="John Doe" type="number" class="bg-white px-2 w-full outline-none p-1 rounded-md"/>
+
+                <div class="flex gap-[3rem] mt-4">
+                    <div>
+                        <h1 class="text-gray-400 text-[0.8rem]">Exp Date</h1>
+                        <input type="month"
+                               class="bg-white placeholder:text-gray-400 text-gray-400 px-2 w-full outline-none p-1 rounded-md"/>
+
+                    </div>
+                    <div>
+
+                        <h1 class="text-gray-400 text-[0.8rem]">Code CVV</h1>
+                        <input max="999" placeholder="***" type="number"
+                               class="bg-white px-2 w-full outline-none p-1 rounded-md"/>
+
+                    </div>
+                </div>
+
+                <h1 class="text-gray-400 text-[0.8rem] mt-5">Code CVV</h1>
+                <input placeholder="Card Holder Name" type="number"
+                       class="bg-white px-2 w-full outline-none p-1 rounded-md"/>
+
+                <button class="w-full p-[0.5rem] rounded-md bg-gradient-to-br from-orange-400 to-orange-600 mt-5 text-white font-light text-[0.8rem]">
+                    Pay 
+                </button>
+
+
+            </form>
+        </div>
+    </section>
+</main>
+</body>
+
+</html>
